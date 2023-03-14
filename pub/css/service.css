@@ -1,0 +1,104 @@
+body {
+  background-color: #59abe3;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #a727b8;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #50505a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #50505a;
+}
+
+.container .services {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .services .card {
+  width: 330px;
+  text-align: center;
+  background: #fff;
+  padding: 20px 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .services .card:hover {
+  background: #50505a;
+}
+
+.container .services .card .content {
+  transition: 0.3s;
+}
+
+.container .services .card:hover .content {
+  transform: scale(1.07);
+}
+
+.container .services .card .content .icon {
+  padding: 5px 0;
+  color: #50505a;
+}
+
+.container .services .card .content .icon i {
+  font-size: 40px;
+}
+
+.container .services .card:hover .content .title {
+  color: #50505a;
+}
+
+.container .services .card .content .title {
+  padding: 5px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #bebed2;
+  transition: 0.3s;
+}

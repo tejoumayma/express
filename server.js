@@ -1,10 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const exphbs = require("express-handlebars");
 const port = process.env.PORT || 5000;
-app.engine("handlebars", exphbs());
-app.set("view engine", "handlebars");
 const days = (req, res, next) => {
   const d = new Date();
   if (d.getDay() === 0 || d.getDay() === 6) {
@@ -16,7 +13,7 @@ const days = (req, res, next) => {
 };
 const hours = (req, res, next) => {
   const h = new Date();
-  if (h.getHours() > 17 || h.getHours() < 9) {
+  if (h.getHours() > 23 || h.getHours() < 9) {
     res.send("working hours from 9am to 5pm");
   } else {
     console.log("Success");

@@ -1,0 +1,16 @@
+[
+  {
+    LastName:" Ben Lahmer",
+    FirstName: "Fares",
+    Email: fares@gmail.com,
+    age:26,
+  },
+  {
+    LastName:" Fatnassi",
+    FirstName: "Sarra",
+    Email: sarra.f@gmail.com,
+    age:40,
+  },
+  { LastName:" Ben Yahia", FirstName:"Rym", age:4 },
+  { LastName: "Cherif", FirstName: "Sami", age:3 },
+]

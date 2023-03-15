@@ -13,7 +13,7 @@ const days = (req, res, next) => {
 };
 const hours = (req, res, next) => {
   const h = new Date();
-  if (h.getHours() > 23 || h.getHours() < 9) {
+  if (h.getHours() > 20 || h.getHours() < 9) {
     res.send("working hours from 9am to 5pm");
   } else {
     console.log("Success");
